@@ -1,0 +1,971 @@
+(nanociencia) convidat@pc2-12:~$ conda 
+.agree2ccp4v6        .chemaxon/           .face.icon           .pki/                .Xauthority
+Baixades/            .conda/              .fonts.conf          .profile             .xonshrc
+.bash_history        .condarc             .gtkrc-2.0           SERVER/              .xsession-errors
+.bash_logout         .config/             .local/              .tcshrc              .zshrc
+.bashrc              Desktop/             .mozilla/            .vmdrc               
+.cache/              .dotnet/             .pam_mount.conf.xml  .vscode/             
+(nanociencia) convidat@pc2-12:~$ conda 
+.agree2ccp4v6        .chemaxon/           .face.icon           .pki/                .Xauthority
+Baixades/            .conda/              .fonts.conf          .profile             .xonshrc
+.bash_history        .condarc             .gtkrc-2.0           SERVER/              .xsession-errors
+.bash_logout         .config/             .local/              .tcshrc              .zshrc
+.bashrc              Desktop/             .mozilla/            .vmdrc               
+.cache/              .dotnet/             .pam_mount.conf.xml  .vscode/             
+(nanociencia) convidat@pc2-12:~$ conda run 
+.agree2ccp4v6        .chemaxon/           .face.icon           .pki/                .Xauthority
+Baixades/            .conda/              .fonts.conf          .profile             .xonshrc
+.bash_history        .condarc             .gtkrc-2.0           SERVER/              .xsession-errors
+.bash_logout         .config/             .local/              .tcshrc              .zshrc
+.bashrc              Desktop/             .mozilla/            .vmdrc               
+.cache/              .dotnet/             .pam_mount.conf.xml  .vscode/             
+(nanociencia) convidat@pc2-12:~$ conda -h
+usage: conda [-h] [-V] command ...
+
+conda is a tool for managing and deploying applications, environments and packages.
+
+Options:
+
+positional arguments:
+  command
+    clean             Remove unused packages and caches.
+    compare           Compare packages between conda environments.
+    config            Modify configuration values in .condarc. This is modeled after the git config command.
+                      Writes to the user .condarc file (/home/samba/homes/convidat/.condarc) by default. Use
+                      the --show-sources flag to display all identified configuration locations on your
+                      computer.
+    create            Create a new conda environment from a list of specified packages.
+    info              Display information about current conda install.
+    init              Initialize conda for shell interaction.
+    install           Installs a list of packages into a specified conda environment.
+    list              List installed packages in a conda environment.
+    package           Low-level conda package utility. (EXPERIMENTAL)
+    remove (uninstall)
+                      Remove a list of packages from a specified conda environment. Use `--all` flag to
+                      remove all packages and the environment itself.
+    rename            Renames an existing environment.
+    run               Run an executable in a conda environment.
+    search            Search for packages and display associated information.The input is a MatchSpec, a
+                      query language for conda packages. See examples below.
+    update (upgrade)  Updates conda packages to the latest compatible version.
+    notices           Retrieves latest channel notifications.
+
+options:
+  -h, --help          Show this help message and exit.
+  -V, --version       Show the conda version number and exit.
+
+conda commands available from other packages:
+ doctor - A subcommand that displays environment health report
+
+conda commands available from other packages (legacy):
+  build
+  content-trust
+  convert
+  debug
+  develop
+  env
+  index
+  inspect
+  metapackage
+  pack
+  render
+  repo
+  server
+  skeleton
+  token
+  verify
+(nanociencia) convidat@pc2-12:~$ conda list
+# packages in environment at /opt/anaconda3/envs/nanociencia:
+#
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                 conda_forge    conda-forge
+_openmp_mutex             4.5                       2_gnu    conda-forge
+alsa-lib                  1.2.10               hd590300_0    conda-forge
+ase                       3.22.1             pyhd8ed1ab_1    conda-forge
+attr                      2.5.1                h166bdaf_1    conda-forge
+biopython                 1.82            py311h459d7ec_0    conda-forge
+blinker                   1.7.0              pyhd8ed1ab_0    conda-forge
+blosc                     1.21.5               h0f2a231_0    conda-forge
+brotli                    1.1.0                hd590300_1    conda-forge
+brotli-bin                1.1.0                hd590300_1    conda-forge
+bzip2                     1.0.8                hd590300_5    conda-forge
+c-ares                    1.25.0               hd590300_0    conda-forge
+ca-certificates           2023.11.17           hbcca054_0    conda-forge
+cached-property           1.5.2                hd8ed1ab_1    conda-forge
+cached_property           1.5.2              pyha770c72_1    conda-forge
+cairo                     1.18.0               h3faef2a_0    conda-forge
+certifi                   2023.11.17         pyhd8ed1ab_0    conda-forge
+cftime                    1.6.3           py311h1f0f07a_0    conda-forge
+click                     8.1.7           unix_pyh707e725_0    conda-forge
+colorama                  0.4.6              pyhd8ed1ab_0    conda-forge
+contourpy                 1.2.0           py311h9547e67_0    conda-forge
+cycler                    0.12.1             pyhd8ed1ab_0    conda-forge
+dbus                      1.13.6               h5008d03_3    conda-forge
+expat                     2.5.0                hcb278e6_1    conda-forge
+f90wrap                   0.2.13          py311hbc92942_2    conda-forge
+fasteners                 0.17.3             pyhd8ed1ab_0    conda-forge
+fftw                      3.3.10          nompi_hc118613_108    conda-forge
+flask                     3.0.0              pyhd8ed1ab_0    conda-forge
+font-ttf-dejavu-sans-mono 2.37                 hab24e00_0    conda-forge
+font-ttf-inconsolata      3.000                h77eed37_0    conda-forge
+font-ttf-source-code-pro  2.038                h77eed37_0    conda-forge
+font-ttf-ubuntu           0.83                 h77eed37_1    conda-forge
+fontconfig                2.14.2               h14ed4e7_0    conda-forge
+fonts-conda-ecosystem     1                             0    conda-forge
+fonts-conda-forge         1                             0    conda-forge
+fonttools                 4.47.0          py311h459d7ec_0    conda-forge
+freetype                  2.12.1               h267a509_2    conda-forge
+gawk                      5.3.0                ha916aea_0    conda-forge
+gettext                   0.21.1               h27087fc_0    conda-forge
+glib                      2.78.3               hfc55251_0    conda-forge
+glib-tools                2.78.3               hfc55251_0    conda-forge
+gmp                       6.3.0                h59595ed_0    conda-forge
+graphite2                 1.3.13            h58526e2_1001    conda-forge
+griddataformats           1.0.2              pyhd8ed1ab_0    conda-forge
+gsd                       3.2.0           py311h1f0f07a_0    conda-forge
+gsl                       2.7                  he838d99_0    conda-forge
+gst-plugins-base          1.22.8               h8e1006c_1    conda-forge
+gstreamer                 1.22.8               h98fc4e7_1    conda-forge
+h5py                      3.10.0          nompi_py311hebc2b07_101    conda-forge
+harfbuzz                  8.3.0                h3d44ed6_0    conda-forge
+hdf4                      4.2.15               h2a13503_7    conda-forge
+hdf5                      1.14.3          nompi_h4f84152_100    conda-forge
+icu                       73.2                 h59595ed_0    conda-forge
+importlib-metadata        7.0.1              pyha770c72_0    conda-forge
+importlib-resources       6.1.1              pyhd8ed1ab_0    conda-forge
+importlib_resources       6.1.1              pyhd8ed1ab_0    conda-forge
+itsdangerous              2.1.2              pyhd8ed1ab_0    conda-forge
+jinja2                    3.1.2              pyhd8ed1ab_1    conda-forge
+joblib                    1.3.2              pyhd8ed1ab_0    conda-forge
+keyutils                  1.6.1                h166bdaf_0    conda-forge
+kim-api                   2.3.0                h94b5c5c_0    conda-forge
+kiwisolver                1.4.5           py311h9547e67_1    conda-forge
+krb5                      1.21.2               h659d440_0    conda-forge
+lame                      3.100             h166bdaf_1003    conda-forge
+lammps                    2023.08.02      cpu_py311_hdd49dfd_nompi_7    conda-forge
+lcms2                     2.16                 hb7c19ff_0    conda-forge
+ld_impl_linux-64          2.40                 h41732ed_0    conda-forge
+lerc                      4.0.0                h27087fc_0    conda-forge
+libaec                    1.1.2                h59595ed_1    conda-forge
+libblas                   3.9.0           20_linux64_openblas    conda-forge
+libbrotlicommon           1.1.0                hd590300_1    conda-forge
+libbrotlidec              1.1.0                hd590300_1    conda-forge
+libbrotlienc              1.1.0                hd590300_1    conda-forge
+libcap                    2.69                 h0f662aa_0    conda-forge
+libcblas                  3.9.0           20_linux64_openblas    conda-forge
+libclang                  15.0.7          default_hb11cfb5_4    conda-forge
+libclang13                15.0.7          default_ha2b6cf4_4    conda-forge
+libcups                   2.3.3                h4637d8d_4    conda-forge
+libcurl                   8.5.0                hca28451_0    conda-forge
+libdeflate                1.19                 hd590300_0    conda-forge
+libedit                   3.1.20191231         he28a2e2_2    conda-forge
+libev                     4.33                 hd590300_2    conda-forge
+libevent                  2.1.12               hf998b51_1    conda-forge
+libexpat                  2.5.0                hcb278e6_1    conda-forge
+libffi                    3.4.2                h7f98852_5    conda-forge
+libflac                   1.4.3                h59595ed_0    conda-forge
+libgcc-ng                 13.2.0               h807b86a_3    conda-forge
+libgcrypt                 1.10.3               hd590300_0    conda-forge
+libgfortran-ng            13.2.0               h69a702a_3    conda-forge
+libgfortran5              13.2.0               ha4646dd_3    conda-forge
+libglib                   2.78.3               h783c2da_0    conda-forge
+libgomp                   13.2.0               h807b86a_3    conda-forge
+libgpg-error              1.47                 h71f35ed_0    conda-forge
+libiconv                  1.17                 hd590300_2    conda-forge
+libidn2                   2.3.4                h166bdaf_0    conda-forge
+libjpeg-turbo             3.0.0                hd590300_1    conda-forge
+liblapack                 3.9.0           20_linux64_openblas    conda-forge
+libllvm15                 15.0.7               hb3ce162_4    conda-forge
+libnetcdf                 4.9.2           nompi_h9612171_113    conda-forge
+libnghttp2                1.58.0               h47da74e_1    conda-forge
+libnsl                    2.0.1                hd590300_0    conda-forge
+libogg                    1.3.4                h7f98852_1    conda-forge
+libopenblas               0.3.25          pthreads_h413a1c8_0    conda-forge
+libopus                   1.3.1                h7f98852_1    conda-forge
+libpng                    1.6.39               h753d276_0    conda-forge
+libpq                     16.1                 h33b98f1_7    conda-forge
+libsndfile                1.2.2                hc60ed4a_1    conda-forge
+libsqlite                 3.44.2               h2797004_0    conda-forge
+libssh2                   1.11.0               h0841786_0    conda-forge
+libstdcxx-ng              13.2.0               h7e041cc_3    conda-forge
+libsystemd0               255                  h3516f8a_0    conda-forge
+libtiff                   4.6.0                ha9c0a0a_2    conda-forge
+libunistring              0.9.10               h7f98852_0    conda-forge
+libuuid                   2.38.1               h0b41bf4_0    conda-forge
+libvorbis                 1.3.7                h9c3ff4c_0    conda-forge
+libwebp-base              1.3.2                hd590300_0    conda-forge
+libxcb                    1.15                 h0b41bf4_0    conda-forge
+libxcrypt                 4.4.36               hd590300_1    conda-forge
+libxkbcommon              1.6.0                hd429924_1    conda-forge
+libxml2                   2.12.3               h232c23b_0    conda-forge
+libzip                    1.10.1               h2629f0a_3    conda-forge
+libzlib                   1.2.13               hd590300_5    conda-forge
+lz4-c                     1.9.4                hcb278e6_0    conda-forge
+markupsafe                2.1.3           py311h459d7ec_1    conda-forge
+matplotlib                3.8.2           py311h38be061_0    conda-forge
+matplotlib-base           3.8.2           py311h54ef318_0    conda-forge
+mda-xdrlib                0.2.0              pyhd8ed1ab_0    conda-forge
+mdanalysis                2.7.0           py311h320fe9a_1    conda-forge
+mlip                      3.0             nompi_h6089a76_1    conda-forge
+mmtf-python               1.1.3              pyhd8ed1ab_0    conda-forge
+mpfr                      4.2.1                h9458935_0    conda-forge
+mpg123                    1.32.3               h59595ed_0    conda-forge
+mrcfile                   1.4.3              pyhd8ed1ab_0    conda-forge
+msgpack-python            1.0.7           py311h9547e67_0    conda-forge
+munkres                   1.1.4              pyh9f0ad1d_0    conda-forge
+mysql-common              8.0.33               hf1915f5_6    conda-forge
+mysql-libs                8.0.33               hca2cd23_6    conda-forge
+n2p2                      2.2.0           nompi_py311_h2e402f4_5    conda-forge
+ncurses                   6.4                  h59595ed_2    conda-forge
+netcdf-fortran            4.6.1           nompi_hacb5139_103    conda-forge
+netcdf4                   1.6.5           nompi_py311he8ad708_100    conda-forge
+networkx                  3.2.1              pyhd8ed1ab_0    conda-forge
+nspr                      4.35                 h27087fc_0    conda-forge
+nss                       3.96                 h1d7d5a4_0    conda-forge
+numpy                     1.26.3          py311h64a7726_0    conda-forge
+openjpeg                  2.5.0                h488ebb8_3    conda-forge
+openssl                   3.2.0                hd590300_1    conda-forge
+packaging                 23.2               pyhd8ed1ab_0    conda-forge
+pandas                    2.1.4           py311h320fe9a_0    conda-forge
+patsy                     0.5.6              pyhd8ed1ab_0    conda-forge
+pcre2                     10.42                hcad00b1_0    conda-forge
+pillow                    10.2.0          py311ha6c5da5_0    conda-forge
+pip                       23.3.2             pyhd8ed1ab_0    conda-forge
+pixman                    0.43.0               h59595ed_0    conda-forge
+pkg-config                0.29.2            h36c2ea0_1008    conda-forge
+plumed                    2.8.2           nompi_h009865c_100    conda-forge
+ply                       3.11                       py_1    conda-forge
+pthread-stubs             0.4               h36c2ea0_1001    conda-forge
+pulseaudio-client         16.1                 hb77b528_5    conda-forge
+pyedr                     0.8.0              pyhd8ed1ab_0    conda-forge
+pyparsing                 3.1.1              pyhd8ed1ab_0    conda-forge
+pyqt                      5.15.9          py311hf0fb5b6_5    conda-forge
+pyqt5-sip                 12.12.2         py311hb755f60_5    conda-forge
+python                    3.11.7          hab00c5b_1_cpython    conda-forge
+python-dateutil           2.8.2              pyhd8ed1ab_0    conda-forge
+python-tzdata             2023.4             pyhd8ed1ab_0    conda-forge
+python_abi                3.11                    4_cp311    conda-forge
+pytng                     0.3.1           py311hb2be122_1    conda-forge
+pytz                      2023.3.post1       pyhd8ed1ab_0    conda-forge
+qt-main                   5.15.8              h450f30e_18    conda-forge
+quippy                    0.9.12          py311hb1b10de_1    conda-forge
+readline                  8.2                  h8228510_1    conda-forge
+scikit-learn              1.3.2           py311hc009520_2    conda-forge
+scipy                     1.11.4          py311h64a7726_0    conda-forge
+seaborn                   0.13.1               hd8ed1ab_0    conda-forge
+seaborn-base              0.13.1             pyhd8ed1ab_0    conda-forge
+setuptools                69.0.3             pyhd8ed1ab_0    conda-forge
+siesta                    4.1.5           nompi_h91825ee_1004    conda-forge
+sip                       6.7.12          py311hb755f60_0    conda-forge
+sisl                      0.14.3          py311hb1864bd_0    conda-forge
+six                       1.16.0             pyh6c4a22f_0    conda-forge
+snappy                    1.1.10               h9fff704_0    conda-forge
+sqlite                    3.44.2               h2c6b66d_0    conda-forge
+statsmodels               0.14.1          py311h1f0f07a_0    conda-forge
+threadpoolctl             3.2.0              pyha21a80b_0    conda-forge
+tidynamics                1.1.2              pyhd8ed1ab_0    conda-forge
+tk                        8.6.13          noxft_h4845f30_101    conda-forge
+toml                      0.10.2             pyhd8ed1ab_0    conda-forge
+tomli                     2.0.1              pyhd8ed1ab_0    conda-forge
+tornado                   6.3.3           py311h459d7ec_1    conda-forge
+tqdm                      4.66.1             pyhd8ed1ab_0    conda-forge
+tzdata                    2023d                h0c530f3_0    conda-forge
+vmd-python                3.1.4           py311h84b6dd2_1    conda-forge
+voro                      0.4.6                h00ab1b0_0    conda-forge
+werkzeug                  3.0.1              pyhd8ed1ab_0    conda-forge
+wget                      1.20.3               ha35d2d1_1    conda-forge
+wheel                     0.42.0             pyhd8ed1ab_0    conda-forge
+xarray                    2023.12.0          pyhd8ed1ab_0    conda-forge
+xcb-util                  0.4.0                hd590300_1    conda-forge
+xcb-util-image            0.4.0                h8ee46fc_1    conda-forge
+xcb-util-keysyms          0.4.0                h8ee46fc_1    conda-forge
+xcb-util-renderutil       0.3.9                hd590300_1    conda-forge
+xcb-util-wm               0.4.1                h8ee46fc_1    conda-forge
+xkeyboard-config          2.40                 hd590300_0    conda-forge
+xorg-kbproto              1.0.7             h7f98852_1002    conda-forge
+xorg-libice               1.1.1                hd590300_0    conda-forge
+xorg-libsm                1.2.4                h7391055_0    conda-forge
+xorg-libx11               1.8.7                h8ee46fc_0    conda-forge
+xorg-libxau               1.0.11               hd590300_0    conda-forge
+xorg-libxdmcp             1.1.3                h7f98852_0    conda-forge
+xorg-libxext              1.3.4                h0b41bf4_2    conda-forge
+xorg-libxrender           0.9.11               hd590300_0    conda-forge
+xorg-renderproto          0.11.1            h7f98852_1002    conda-forge
+xorg-xextproto            7.3.0             h0b41bf4_1003    conda-forge
+xorg-xf86vidmodeproto     2.3.1             h7f98852_1002    conda-forge
+xorg-xproto               7.0.31            h7f98852_1007    conda-forge
+xz                        5.2.6                h166bdaf_0    conda-forge
+zipp                      3.17.0             pyhd8ed1ab_0    conda-forge
+zlib                      1.2.13               hd590300_5    conda-forge
+zstd                      1.5.5                hfc55251_0    conda-forge
+(nanociencia) convidat@pc2-12:~$ cd Desktop/07_03_24/
+SIESTA_examples-main/ .venv/                
+(nanociencia) convidat@pc2-12:~$ cd Desktop/07_03_24/SIESTA_examples-main/C60/example_input/
+(nanociencia) convidat@pc2-12:~/Desktop/07_03_24/SIESTA_examples-main/C60/example_input$ conda run siesta RUN.fdf
+Siesta Version  : 4.1.5
+Architecture    : unknown
+Compiler version: GNU Fortran (conda-forge gcc 12.3.0-2) 12.3.0
+Compiler flags  : x86_64-conda-linux-gnu-gfortran -march=nocona -mtune=haswell -ftree-vectorizee -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe  -fallow-argument-mismatch
+PP flags        : -DFC_HAVE_ABORT -DCDF -DNCDF -DNCDF_4
+Libraries       : libncdf.a libfdict.a -llapack -lblas -lnetcdff -lnetcdf -lhdf5_hl -lhdf5 -lz
+SERIAL version
+NetCDF support
+NetCDF-4 support
+
+* Running in serial mode
+>> Start of run:  11-MAR-2024  14:04:25
+
+                           ***********************       
+                           *  WELCOME TO SIESTA  *       
+                           ***********************       
+
+reinit: Reading from RUN.fdf
+
+reinit: -----------------------------------------------------------------------
+reinit: System Name: 
+reinit: -----------------------------------------------------------------------
+reinit: System Label: C60
+reinit: -----------------------------------------------------------------------
+
+initatom: Reading input for the pseudopotentials and atomic orbitals ----------
+Species number:   1 Atomic number:    6 Label: C
+
+Ground state valence configuration:   2s02  2p02
+Reading pseudopotential information in formatted form from C.psf
+
+Pseudopotential generated from a relativistic atomic calculation
+
+Valence configuration for pseudopotential generation:
+2s( 2.00) rc: 1.25
+2p( 2.00) rc: 1.25
+3d( 0.00) rc: 1.25
+4f( 0.00) rc: 1.25
+For C, standard SIESTA heuristics set lmxkb to 3
+ (one more than the basis l, including polarization orbitals).
+Use PS.lmax or PS.KBprojectors blocks to override.
+
+<basis_specs>
+===============================================================================
+C                    Z=   6    Mass=  12.010        Charge= 0.17977+309
+Lmxo=1 Lmxkb= 3    BasisType=split      Semic=F
+L=0  Nsemic=0  Cnfigmx=2
+          i=1  nzeta=2  polorb=0  (2s)
+            splnorm:   0.15000    
+               vcte:    40.000    
+               rinn:  -0.90000    
+               qcoe:    0.0000    
+               qyuk:    0.0000    
+               qwid:   0.10000E-01
+                rcs:    0.0000      0.0000    
+            lambdas:    1.0000      1.0000    
+L=1  Nsemic=0  Cnfigmx=2
+          i=1  nzeta=2  polorb=1  (2p)
+            splnorm:   0.15000    
+               vcte:    40.000    
+               rinn:  -0.90000    
+               qcoe:    0.0000    
+               qyuk:    0.0000    
+               qwid:   0.10000E-01
+                rcs:    0.0000      0.0000    
+            lambdas:    1.0000      1.0000    
+-------------------------------------------------------------------------------
+L=0  Nkbl=1  erefs: 0.17977+309
+L=1  Nkbl=1  erefs: 0.17977+309
+L=2  Nkbl=1  erefs: 0.17977+309
+L=3  Nkbl=1  erefs: 0.17977+309
+===============================================================================
+</basis_specs>
+
+atom: Called for C                     (Z =   6)
+
+read_vps: Pseudopotential generation method:
+read_vps: ATM3.3    Troullier-Martins                       
+Valence charge for ps generation:    4.00000
+
+xc_check: Exchange-correlation functional:
+xc_check: GGA Perdew, Burke & Ernzerhof 1996
+V l=0 = -2*Zval/r beyond r=  1.5418
+V l=1 = -2*Zval/r beyond r=  1.5418
+V l=2 = -2*Zval/r beyond r=  1.5418
+V l=3 = -2*Zval/r beyond r=  1.5418
+All V_l potentials equal beyond r=  1.2311
+This should be close to max(r_c) in ps generation
+All pots = -2*Zval/r beyond r=  1.5418
+
+VLOCAL1: 99.0% of the norm of Vloc inside     28.641 Ry
+VLOCAL1: 99.9% of the norm of Vloc inside     65.273 Ry
+atom: Maximum radius for 4*pi*r*r*local-pseudopot. charge    1.48507
+atom: Maximum radius for r*vlocal+2*Zval:    1.27815
+GHOST: No ghost state for L =  0
+GHOST: No ghost state for L =  1
+GHOST: No ghost state for L =  2
+GHOST: No ghost state for L =  3
+
+KBgen: Kleinman-Bylander projectors: 
+   l= 0   rc=  1.747182   el= -1.010225   Ekb=  7.798448   kbcos=  0.282075
+   l= 1   rc=  1.769164   el= -0.388560   Ekb= -4.766042   kbcos= -0.279362
+   l= 2   rc=  1.979871   el=  0.001971   Ekb= -1.288752   kbcos= -0.004914
+   l= 3   rc=  2.055542   el=  0.003065   Ekb= -0.648726   kbcos= -0.000427
+
+KBgen: Total number of Kleinman-Bylander projectors:   16
+atom: -------------------------------------------------------------------------
+
+atom: SANKEY-TYPE ORBITALS:
+atom: Selected multiple-zeta basis: split     
+
+SPLIT: Orbitals with angular momentum L= 0
+
+SPLIT: Basis orbitals for state 2s
+
+SPLIT: PAO cut-off radius determined from an
+SPLIT: energy shift=  0.003675 Ry
+
+   izeta = 1
+                 lambda =    1.000000
+                     rc =    4.993604
+                 energy =   -1.006149
+                kinetic =    0.880407
+    potential(screened) =   -1.886556
+       potential(ionic) =   -5.452679
+
+   izeta = 2
+                 rmatch =    3.475094
+              splitnorm =    0.150000
+                 energy =   -0.864732
+                kinetic =    1.379091
+    potential(screened) =   -2.243822
+       potential(ionic) =   -6.057036
+
+SPLIT: Orbitals with angular momentum L= 1
+
+SPLIT: Basis orbitals for state 2p
+
+SPLIT: PAO cut-off radius determined from an
+SPLIT: energy shift=  0.003675 Ry
+
+   izeta = 1
+                 lambda =    1.000000
+                     rc =    6.253707
+                 energy =   -0.384630
+                kinetic =    2.425972
+    potential(screened) =   -2.810602
+       potential(ionic) =   -6.235914
+
+   izeta = 2
+                 rmatch =    3.699245
+              splitnorm =    0.150000
+                 energy =   -0.249362
+                kinetic =    3.653971
+    potential(screened) =   -3.903334
+       potential(ionic) =   -7.726430
+
+POLgen: Perturbative polarization orbital with L=  2
+
+POLgen: Polarization orbital for state 2p
+
+   izeta = 1
+                     rc =    6.253707
+                 energy =    1.037476
+                kinetic =    2.153856
+    potential(screened) =   -1.116380
+       potential(ionic) =   -3.873191
+atom: Total number of Sankey-type orbitals: 13
+
+atm_pop: Valence configuration (for local Pseudopot. screening):
+ 2s( 2.00)                                                            
+ 2p( 2.00)                                                            
+Vna: chval, zval:    4.00000   4.00000
+
+Vna:  Cut-off radius for the neutral-atom potential:   6.253707
+
+atom: _________________________________________________________________________
+
+prinput: Basis input ----------------------------------------------------------
+
+PAO.BasisType split     
+
+%block ChemicalSpeciesLabel
+    1    6 C                       # Species index, atomic number, species label
+%endblock ChemicalSpeciesLabel
+
+%block PAO.Basis                 # Define Basis set
+C                     2                    # Species label, number of l-shells
+ n=2   0   2                         # n, l, Nzeta 
+   4.994      3.475   
+   1.000      1.000   
+ n=2   1   2 P   1                   # n, l, Nzeta, Polarization, NzetaPol
+   6.254      3.699   
+   1.000      1.000   
+%endblock PAO.Basis
+
+prinput: ----------------------------------------------------------------------
+
+Dumping basis to NetCDF file C.ion.nc
+coor:   Atomic-coordinates input format  =     Fractional
+
+siesta: Atomic coordinates (Bohr) and species
+siesta:      4.68004   1.27638   5.58711  1        1
+siesta:      6.56113   0.38226   3.43822  1        2
+siesta:      2.76224  -0.66950   6.84189  1        3
+siesta:      6.50498  -2.46852   2.51604  1        4
+siesta:      6.70151  -3.09699  -0.41682  1        5
+siesta:      6.80302   2.61538   1.44267  1        6
+siesta:      7.00387   1.97611  -1.48155  1        7
+siesta:      6.95204  -0.86819  -2.42101  1        8
+siesta:     -0.94810   2.92206   6.75334  1        9
+siesta:      0.94162   4.88521   5.51584  1       10
+siesta:     -0.06479   0.13606   7.42501  1       11
+siesta:      3.76650   4.05805   4.93057  1       12
+siesta:      5.07959   4.89817   2.37350  1       13
+siesta:     -0.56800   6.53738   3.52677  1       14
+siesta:      0.72781   7.35374   0.94378  1       15
+siesta:      3.56780   6.53953   0.36931  1       16
+siesta:     -4.51375  -1.77526   5.60439  1       17
+siesta:     -5.42298   1.00641   4.93489  1       18
+siesta:     -1.82494  -2.21368   6.85485  1       19
+siesta:     -3.64339   3.35400   5.50936  1       20
+siesta:     -3.42095   5.58495   3.52461  1       21
+siesta:     -6.97795   0.87683   2.37782  1       22
+siesta:     -6.74471   3.11211   0.37795  1       23
+siesta:     -4.95648   5.46185   0.95026  1       24
+siesta:     -1.06041  -6.29117   3.75138  1       25
+siesta:     -3.76434  -5.85707   2.51388  1       26
+siesta:     -0.08423  -4.46623   5.92834  1       27
+siesta:     -5.50504  -3.59588   3.44254  1       28
+siesta:     -7.04058  -1.97395   1.44699  1       29
+siesta:     -3.57212  -6.49202  -0.41034  1       30
+siesta:     -5.08391  -4.84634  -2.41237  1       31
+siesta:     -6.83325  -2.58083  -1.48587  1       32
+siesta:      4.61309  -4.43816   3.74922  1       33
+siesta:      3.64771  -6.26525   1.57441  1       34
+siesta:      2.76008  -3.53541   5.92402  1       35
+siesta:      0.79477  -7.19824   1.57657  1       36
+siesta:     -0.74293  -7.32134  -0.99130  1       37
+siesta:      4.94353  -5.45321  -1.00210  1       38
+siesta:      3.41015  -5.55472  -3.58076  1       39
+siesta:      0.55288  -6.48986  -3.56996  1       40
+siesta:     -4.71460  -1.24830  -5.61087  1       41
+siesta:     -3.77513  -4.03646  -4.98456  1       42
+siesta:     -0.94594  -4.85282  -5.58279  1       43
+siesta:     -2.76656   0.68894  -6.83973  1       44
+siesta:     -4.64981   4.43816  -3.75354  1       45
+siesta:     -6.58489   2.49012  -2.55059  1       46
+siesta:     -6.62160  -0.35203  -3.47926  1       47
+siesta:     -2.73416   3.54405  -5.88947  1       48
+siesta:      1.08848   6.34084  -3.76218  1       49
+siesta:     -0.81852   7.24791  -1.62193  1       50
+siesta:     -3.65851   6.30413  -1.61761  1       51
+siesta:      0.11230   4.47703  -5.90891  1       52
+siesta:      4.53103   1.80118  -5.62599  1       53
+siesta:      5.51152   3.65419  -3.47926  1       54
+siesta:      3.79889   5.92834  -2.55275  1       55
+siesta:      1.81846   2.20504  -6.86565  1       56
+siesta:      0.96322  -2.91342  -6.83757  1       57
+siesta:      3.66715  -3.34320  -5.59575  1       58
+siesta:      5.43809  -0.99778  -5.00400  1       59
+siesta:      0.04751  -0.13822  -7.46820  1       60
+
+siesta: System type = molecule  
+
+initatomlists: Number of atoms, orbitals, and projectors:     60   780   960
+
+coxmol: Writing XMOL coordinates into file C60.xyz                                                             
+
+siesta: ******************** Simulation parameters ****************************
+siesta:
+siesta: The following are some of the parameters of the simulation.
+siesta: A complete list of the parameters used, including default values,
+siesta: can be found in file out.fdf
+siesta:
+redata: Spin configuration                          = none
+redata: Number of spin components                   = 1
+redata: Time-Reversal Symmetry                      = T
+redata: Spin spiral                                 = F
+redata: Long output                                 =   F
+redata: Number of Atomic Species                    =        1
+redata: Charge density info will appear in .RHO file
+redata: Write Mulliken Pop.                         = NO
+redata: Matel table size (NRTAB)                    =     1024
+redata: Mesh Cutoff                                 =   250.0000 Ry
+redata: Net charge of the system                    =     0.0000 |e|
+redata: Min. number of SCF Iter                     =        0
+redata: Max. number of SCF Iter                     =     1000
+redata: SCF convergence failure will abort job
+redata: SCF mix quantity                            = Hamiltonian
+redata: Mix DM or H after convergence               =   F
+redata: Recompute H after scf cycle                 =   F
+redata: Mix DM in first SCF step                    =   T
+redata: Write Pulay info on disk                    =   F
+redata: New DM Occupancy tolerance                  = 0.000000000001
+redata: No kicks to SCF
+redata: DM Mixing Weight for Kicks                  =     0.5000
+redata: Require Harris convergence for SCF          =   F
+redata: Harris energy tolerance for SCF             =     0.000100 eV
+redata: Require DM convergence for SCF              =   T
+redata: DM tolerance for SCF                        =     0.000100
+redata: Require EDM convergence for SCF             =   F
+redata: EDM tolerance for SCF                       =     0.001000 eV
+redata: Require H convergence for SCF               =   T
+redata: Hamiltonian tolerance for SCF               =     0.001000 eV
+redata: Require (free) Energy convergence for SCF   =   F
+redata: (free) Energy tolerance for SCF             =     0.000100 eV
+redata: Using Saved Data (generic)                  =   F
+redata: Use continuation files for DM               =   F
+redata: Neglect nonoverlap interactions             =   F
+redata: Method of Calculation                       = Diagonalization
+redata: Electronic Temperature                      =   299.9869 K
+redata: Fix the spin of the system                  =   F
+redata: Dynamics option                             = Single-point calculation
+mix.SCF: Pulay mixing                            = Pulay
+mix.SCF:    Variant                              = stable
+mix.SCF:    History steps                        = 2
+mix.SCF:    Linear mixing weight                 =     0.250000
+mix.SCF:    Mixing weight                        =     0.250000
+mix.SCF:    SVD condition                        = 0.1000E-07
+redata: Save all siesta data in one NC              =   T
+redata: NC compression level                        =        9
+redata: ***********************************************************************
+
+%block SCF.Mixers
+  Pulay
+%endblock SCF.Mixers
+
+%block SCF.Mixer.Pulay
+  # Mixing method
+  method pulay
+  variant stable
+
+  # Mixing options
+  weight 0.2500
+  weight.linear 0.2500
+  history 2
+%endblock SCF.Mixer.Pulay
+
+DM_history_depth set to one: no extrapolation allowed by default for geometry relaxation
+Size of DM history Fstack: 1
+Total number of electrons:   240.000000
+Total ionic charge:   240.000000
+ Kpoints in:            1 . Kpoints trimmed:            1
+
+siesta: k-grid: Number of k-points =     1
+siesta: k-grid: Cutoff (effective) =     8.000 Ang
+siesta: k-grid: Supercell and displacements
+siesta: k-grid:    1   0   0      0.000
+siesta: k-grid:    0   1   0      0.000
+siesta: k-grid:    0   0   1      0.000
+
+diag: Algorithm                                     = D&C
+diag: Used triangular part                          = Lower
+diag: Absolute tolerance                            =  0.100E-15
+diag: Orthogonalization factor                      =  0.100E-05
+diag: Memory factor                                 =  1.0000
+
+
+ts: **************************************************************
+ts: Save H and S matrices                           =    F
+ts: Save DM and EDM matrices                        =    F
+ts: Only save the overlap matrix S                  =    F
+ts: **************************************************************
+
+************************ Begin: TS CHECKS AND WARNINGS ************************
+************************ End: TS CHECKS AND WARNINGS **************************
+
+
+                     ====================================
+                        Single-point calculation
+                     ====================================
+
+outcell: Unit cell vectors (Ang):
+       16.000000    0.000000    0.000000
+        0.000000   16.000000    0.000000
+        0.000000    0.000000   16.000000
+
+outcell: Cell vector modules (Ang)   :   16.000000   16.000000   16.000000
+outcell: Cell angles (23,13,12) (deg):     90.0000     90.0000     90.0000
+outcell: Cell volume (Ang**3)        :   4096.0000
+<dSpData1D:S at geom step 0
+  <sparsity:sparsity for geom step 0
+    nrows_g=780 nrows=780 sparsity=.6767 nnzs=411720, refcount: 7>
+  <dData1D:(new from dSpData1D) n=411720, refcount: 1>
+refcount: 1>
+new_DM -- step:     1
+Initializing Density Matrix...
+DM filled with atomic data:
+<dSpData2D:DM initialized from atoms
+  <sparsity:sparsity for geom step 0
+    nrows_g=780 nrows=780 sparsity=.6767 nnzs=411720, refcount: 8>
+  <dData2D:DM n=411720 m=1, refcount: 1>
+refcount: 1>
+No. of atoms with KB's overlaping orbs in proc 0. Max # of overlaps:      60     196
+New grid distribution:   1
+           1       1:   80    1:   80    1:   80
+
+InitMesh: MESH =   160 x   160 x   160 =     4096000
+InitMesh: (bp) =    80 x    80 x    80 =      512000
+InitMesh: Mesh cutoff (required, used) =   250.000   276.377 Ry
+ExtMesh (bp) on 0 =   148 x   148 x   148 =     3241792
+PhiOnMesh: Number of (b)points on node 0 =               512000
+PhiOnMesh: nlist on node 0 =             11381629
+
+stepf: Fermi-Dirac step function
+
+siesta: Program's energy decomposition (eV):
+siesta: Ebs     =     -2755.379634
+siesta: Eions   =     18968.068884
+siesta: Ena     =      6453.867983
+siesta: Ekin    =      6222.074980
+siesta: Enl     =       -93.164715
+siesta: Eso     =         0.000000
+siesta: Edftu   =         0.000000
+siesta: DEna    =      -163.865668
+siesta: DUscf   =        16.555983
+siesta: DUext   =         0.000000
+siesta: Exc     =     -2706.454239
+siesta: eta*DQ  =         0.000000
+siesta: Emadel  =         0.000000
+siesta: Emeta   =         0.000000
+siesta: Emolmec =         0.000000
+siesta: Ekinion =         0.000000
+siesta: Eharris =     -9247.931957
+siesta: Etot    =     -9239.054559
+siesta: FreeEng =     -9239.054559
+
+        iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
+   scf:    1    -9247.931957    -9239.054559    -9239.054559  1.777827 -6.351882  2.995524
+timer: Routine,Calls,Time,% = IterSCF        1      13.921  61.87
+   scf:    2    -9243.640963    -9241.724700    -9241.724700  0.024563 -5.798738  1.428834
+   scf:    3    -9242.679723    -9242.330898    -9242.330898  0.026784 -5.377452  0.314108
+   scf:    4    -9242.451965    -9242.396396    -9242.396396  0.007381 -5.328246  0.178031
+   scf:    5    -9242.433600    -9242.418141    -9242.418141  0.005353 -5.298445  0.116866
+   scf:    6    -9242.420794    -9242.420453    -9242.420453  0.001722 -5.296271  0.066932
+   scf:    7    -9242.422308    -9242.421547    -9242.421547  0.000833 -5.294310  0.029440
+   scf:    8    -9242.422616    -9242.422108    -9242.422108  0.000554 -5.293119  0.017340
+   scf:    9    -9242.422655    -9242.422410    -9242.422410  0.000505 -5.292809  0.012905
+   scf:   10    -9242.422486    -9242.422459    -9242.422459  0.000179 -5.293125  0.006335
+   scf:   11    -9242.422511    -9242.422487    -9242.422487  0.000100 -5.293516  0.002697
+   scf:   12    -9242.422521    -9242.422504    -9242.422504  0.000074 -5.294060  0.002638
+   scf:   13    -9242.422523    -9242.422514    -9242.422514  0.000068 -5.294762  0.001939
+   scf:   14    -9242.422519    -9242.422517    -9242.422517  0.000030 -5.294922  0.001792
+   scf:   15    -9242.422519    -9242.422518    -9242.422518  0.000017 -5.295342  0.001130
+   scf:   16    -9242.422519    -9242.422518    -9242.422518  0.000014 -5.295761  0.001066
+   scf:   17    -9242.422519    -9242.422519    -9242.422519  0.000010 -5.295884  0.000698
+
+SCF Convergence by DM+H criterion
+max |DM_out - DM_in|         :     0.0000103820
+max |H_out - H_in|      (eV) :     0.0006983142
+SCF cycle converged after 17 iterations
+
+Using DM_out to compute the final energy and forces
+No. of atoms with KB's overlaping orbs in proc 0. Max # of overlaps:      60     196
+
+siesta: E_KS(eV) =            -9242.4225
+
+siesta: E_KS - E_eggbox =     -9242.4225
+
+siesta: Atomic forces (eV/Ang):
+----------------------------------------
+   Tot   -0.024252   -0.034274    0.027849
+----------------------------------------
+   Max    2.614707
+   Res    1.480108    sqrt( Sum f_i^2 / 3N )
+----------------------------------------
+   Max    2.614707    constrained
+
+Stress tensor Voigt[x,y,z,yz,xz,xy] (kbar):       75.71       76.01       75.74        0.27       -0.18        0.14
+(Free)E + p*V (eV/cell)    -9436.2517
+Target enthalpy (eV/cell)    -9242.4225
+
+coxmol: Writing XMOL coordinates into file C60.xyz                                                             
+
+siesta: Program's energy decomposition (eV):
+siesta: Ebs     =     -3074.651142
+siesta: Eions   =     18968.068884
+siesta: Ena     =      6453.867983
+siesta: Ekin    =      6105.771545
+siesta: Enl     =       -75.383871
+siesta: Eso     =         0.000000
+siesta: Edftu   =         0.000000
+siesta: DEna    =       -84.236731
+siesta: DUscf   =         9.999566
+siesta: DUext   =         0.000000
+siesta: Exc     =     -2684.372126
+siesta: eta*DQ  =         0.000000
+siesta: Emadel  =         0.000000
+siesta: Emeta   =         0.000000
+siesta: Emolmec =         0.000000
+siesta: Ekinion =         0.000000
+siesta: Eharris =     -9242.422519
+siesta: Etot    =     -9242.422519
+siesta: FreeEng =     -9242.422519
+
+siesta: Final energy (eV):
+siesta:  Band Struct. =   -3074.651142
+siesta:       Kinetic =    6105.771545
+siesta:       Hartree =   31275.752268
+siesta:       Edftu   =       0.000000
+siesta:       Eso     =       0.000000
+siesta:    Ext. field =       0.000000
+siesta:   Exch.-corr. =   -2684.372126
+siesta:  Ion-electron =  -68240.272487
+siesta:       Ion-ion =   24300.698281
+siesta:       Ekinion =       0.000000
+siesta:         Total =   -9242.422519
+siesta:         Fermi =      -5.295884
+
+siesta: Atomic forces (eV/Ang):
+siesta:      1   -1.970258   -0.763114   -1.326932
+siesta:      2   -2.164549   -0.765611   -1.273686
+siesta:      3   -0.200601    0.534817   -2.472402
+siesta:      4   -1.935012    1.377204   -0.708935
+siesta:      5   -1.910182    1.524160   -0.390117
+siesta:      6   -2.061543   -1.024921   -1.175742
+siesta:      7   -2.218784   -0.281715    1.126827
+siesta:      8   -2.141217   -0.391776    1.303205
+siesta:      9    0.244720   -1.542573   -1.988742
+siesta:     10    0.538004   -1.760319   -1.834641
+siesta:     11    0.082476    0.700335   -2.515013
+siesta:     12   -1.831726   -1.024963   -1.347785
+siesta:     13   -1.900436   -1.253753   -1.269682
+siesta:     14    0.346011   -1.894462   -1.769071
+siesta:     15   -0.468363   -2.430328    0.375160
+siesta:     16   -0.765530   -2.375986    0.434339
+siesta:     17    1.931856    0.543996   -1.481173
+siesta:     18    2.077298    0.195321   -1.330831
+siesta:     19   -0.092314    0.871020   -2.467256
+siesta:     20    0.630703   -1.614368   -1.811078
+siesta:     21    0.783660   -1.752522   -1.738494
+siesta:     22    2.175875    0.394609   -1.280696
+siesta:     23    1.955729   -1.494903    0.396175
+siesta:     24    1.844333   -1.651102    0.357349
+siesta:     25    0.442955    2.314856   -0.730237
+siesta:     26    0.706885    2.336398   -0.525547
+siesta:     27   -0.278479    0.831901   -2.455419
+siesta:     28    2.232358    0.401757   -1.271250
+siesta:     29    2.321182    0.639909   -1.120466
+siesta:     30    0.844249    2.404760   -0.375244
+siesta:     31    1.896303    1.070777    1.228369
+siesta:     32    2.079377    0.869747    1.195044
+siesta:     33   -1.769287    1.734560   -0.690573
+siesta:     34   -1.944554    1.652620   -0.471379
+siesta:     35   -0.617159    0.952515   -2.345784
+siesta:     36    0.535561    2.483974   -0.436016
+siesta:     37    0.421205    2.553899   -0.327176
+siesta:     38   -1.819445    1.856841   -0.246856
+siesta:     39   -0.756997    1.665774    1.725982
+siesta:     40   -0.292159    1.819468    1.621574
+siesta:     41    2.149492    0.777230    1.165033
+siesta:     42    1.655463    1.226849    1.468668
+siesta:     43   -0.493327    1.610160    1.980339
+siesta:     44    0.149735   -0.563134    2.397182
+siesta:     45    2.127046   -1.449652    0.421686
+siesta:     46    2.240331   -1.291978    0.741836
+siesta:     47    2.253093    0.621328    1.327904
+siesta:     48    0.304989   -1.017650    2.156719
+siesta:     49   -0.681045   -2.452939    0.447029
+siesta:     50   -0.147558   -2.540480    0.564807
+siesta:     51    1.607129   -1.956754    0.566264
+siesta:     52    0.078920   -0.873103    2.312894
+siesta:     53   -2.211655   -0.584278    1.172008
+siesta:     54   -2.114360   -0.863795    1.290612
+siesta:     55   -0.983795   -2.390299    0.666534
+siesta:     56    0.282793   -0.581681    2.496789
+siesta:     57   -0.479270    1.567191    2.113599
+siesta:     58   -0.796621    1.559508    1.964812
+siesta:     59   -2.041183   -0.025145    1.572626
+siesta:     60    0.123426   -0.514453    2.614707
+siesta: ----------------------------------------
+siesta:    Tot   -0.024252   -0.034274    0.027849
+
+siesta: Stress tensor (static) (eV/Ang**3):
+siesta:     0.047253    0.000090   -0.000113
+siesta:     0.000090    0.047441    0.000166
+siesta:    -0.000113    0.000166    0.047271
+
+siesta: Cell volume =       4096.000000 Ang**3
+
+siesta: Pressure (static):
+siesta:                Solid            Molecule  Units
+siesta:          -0.00051539         -0.00000042  Ry/Bohr**3
+siesta:          -0.04732159         -0.00003842  eV/Ang**3
+siesta:         -75.81835997         -0.06155248  kBar
+(Free)E+ p_basis*V_orbitals  =       -9209.588644
+(Free)Eharris+ p_basis*V_orbitals  =       -9209.588644
+
+siesta: Electric dipole (a.u.)  =   -0.000654   -0.003244   -0.015824
+siesta: Electric dipole (Debye) =   -0.001662   -0.008244   -0.040221
+
+cite: Please see "C60.bib" for an exhaustive BiBTeX file.
+cite: Please clearly indicate Siesta version in published work: 4.1.5
+cite: This calculation has made use of the following articles
+cite: which are encouraged to be cited in a published work.
+        Primary SIESTA paper
+          DOI: www.doi.org/10.1088/0953-8984/14/11/302
+
+
+timer: Elapsed wall time (sec) =     164.130
+timer: CPU execution times (sec):
+
+Routine            Calls   Time/call    Tot.time        %
+siesta                 1     189.953     189.953   100.00
+Setup                  1       0.946       0.946     0.50
+bands                  1       0.000       0.000     0.00
+KSV_init               1       0.000       0.000     0.00
+IterGeom               1     184.790     184.790    97.28
+state_init             1       1.319       1.319     0.69
+hsparse                1       0.024       0.024     0.01
+overlap                1       0.122       0.122     0.06
+CDF-basis              1       0.004       0.004     0.00
+CDF                   19       2.750      52.252    27.51
+Setup_H0               1       6.310       6.310     3.32
+naefs                  2       0.000       0.001     0.00
+MolMec                 2       0.000       0.000     0.00
+kinefsm                2       0.098       0.197     0.10
+nlefsm                 2       0.390       0.781     0.41
+DHSCF_Init             1       5.763       5.763     3.03
+DHSCF1                 1       0.032       0.032     0.02
+INITMESH               1       0.000       0.000     0.00
+DHSCF2                 1       5.731       5.731     3.02
+REMESH                 1       1.125       1.125     0.59
+REORD                 47       0.005       0.249     0.13
+PHION                  1       3.848       3.848     2.03
+COMM_BSC              82       0.004       0.301     0.16
+POISON                21       0.247       5.192     2.73
+fft                   42       0.102       4.275     2.25
+IterSCF               17       9.471     161.009    84.76
+setup_H               18       4.745      85.417    44.97
+DHSCF                 20       5.056     101.117    53.23
+DHSCF3                20       4.684      93.680    49.32
+rhoofd                20       1.997      39.946    21.03
+XC                    20       0.777      15.530     8.18
+GXC-CellXC            20       0.756      15.125     7.96
+cellXC                20       0.756      15.124     7.96
+vmat                  19       1.615      30.683    16.15
+writeHSX              19       0.030       0.568     0.30
+compute_dm            17       1.640      27.884    14.68
+diagon                17       1.639      27.858    14.67
+r-eigvec              17       0.540       9.175     4.83
+r-buildHS             17       0.001       0.021     0.01
+rdiag                 17       0.538       9.154     4.82
+rdiag1                17       0.018       0.306     0.16
+rdiag2                17       0.054       0.922     0.49
+rdiag3                17       0.435       7.400     3.90
+rdiag4                17       0.030       0.512     0.27
+r-buildD              17       1.092      18.559     9.77
+MIXER                 16       0.003       0.050     0.03
+PostSCF                1      13.219      13.219     6.96
+DHSCF4                 1       7.436       7.436     3.91
+dfscf                  1       6.874       6.874     3.62
+overfsm                1       0.071       0.071     0.04
+state_analysis         1       0.000       0.000     0.00
+siesta_move            1       0.000       0.000     0.00
+Analysis               1       4.208       4.208     2.22
+siesta_analysis        1       4.208       4.208     2.22
+optical                1       0.000       0.000     0.00
+CDF-grid               1       1.149       1.149     0.60
+  
+>> End of run:  11-MAR-2024  14:07:09
+Job completed
+
+Job completed
+
+(nanociencia) convidat@pc2-12:~/Desktop/07_03_24/SIESTA_examples-main/C60/example_input$ 
