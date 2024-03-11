@@ -1,0 +1,23 @@
+
+SystemLabel C60
+
+#Input structure
+%include C60_coords.fdf
+
+#Calculation details
+PAO.EnergyShift            50 meV
+PAO.BasisSize DZP
+PAO.SoftDefault            .true.
+PAO.BasisType              split
+XC.functional     GGA 
+XC.authors        PBE 
+MeshCutoff 250. Ry
+
+#Data save
+CDF.Save true
+CDF.Compress 9
+SaveHS true
+SaveRho true
+
+#Output structure XYZ format for visualization
+WriteCoorXmol          true         #Save the final coordinates in .xyz format

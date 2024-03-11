@@ -1,0 +1,44 @@
+%YAML 1.2
+---
+
+siesta:
+  version: "4.1.5"
+  arch: "unknown"
+  compiler: "GNU Fortran (conda-forge gcc 12.3.0-2) 12.3.0"
+  fflags: "x86_64-conda-linux-gnu-gfortran -march=nocona -mtune=haswell -ftree-vectorizee -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe  -fallow-argument-mismatch"
+  fppflags: "-DFC_HAVE_ABORT -DCDF -DNCDF -DNCDF_4"
+  libs: "libncdf.a libfdict.a -llapack -lblas -lnetcdff -lnetcdf -lhdf5_hl -lhdf5 -lz"
+  build: "serial"
+  openmp: "no"
+  gemm3m: "no"
+  netcdf: "yes"
+  netcdf4: "yes"
+  netcdf4_mpi: "no"
+  metis: "no"
+  chess: "no"
+  elpa: "no"
+  flook: "no"
+  pexsi: "no"
+
+energies:
+  Ebs:          -0.22598092E+03
+  Eions:           0.13941164E+04
+  Ena:           0.47434682E+03
+  Ekin:           0.44876241E+03
+  Enl:          -0.55405688E+01
+  Eso:           0.00000000E+00
+  Edftu:           0.00000000E+00
+  DEna:          -0.61912369E+01
+  DUscf:           0.73494876E+00
+  DUext:           0.00000000E+00
+  Exc:          -0.19729616E+03
+  Ecorrec:           0.00000000E+00
+  Emadel:           0.00000000E+00
+  Emeta:           0.00000000E+00
+  Emolmec:           0.00000000E+00
+  Ekinion:           0.00000000E+00
+  Eharris:          -0.67930019E+03
+  Etot:          -0.67930019E+03
+  FreeEng:          -0.67930019E+03
+
+...
