@@ -1,0 +1,7 @@
+%include geom.fdf 
+%block kgrid.MonkhorstPack
+   4 0 0  0
+   0 4 0  0
+   0 0 1  0
+%endblock kgrid.MonkhorstPack
+PAO.BasisSize DZP
