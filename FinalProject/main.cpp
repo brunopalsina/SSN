@@ -8,24 +8,24 @@
 #include <random>
 
 // settings
-const unsigned int SCR_WIDTH = 300;
-const unsigned int SCR_HEIGHT = 300;
+const unsigned int SCR_WIDTH = 450;
+const unsigned int SCR_HEIGHT = 450;
 
 // Constants for Lennard-Jones potential in SI units
 const double PI = 3.14159265358979323846;
 const double epsilon = 0.00286 * 1.60218e-19; // Depth of the potential well in Joules
 const double sigma = 0.35e-9;                // Distance at which the potential is zero in meters
-const double dt = 1e-16;                      // Time step for integration in seconds
+const double dt = 1e-15;                      // Time step for integration in seconds
 const double cMass = 1.9944733e-26;
 const double Kb = 1.380649e-23;
 
 // Global variables
 std::array<double, 2> r1, r2, r3, r4, r5, r6, r7, r8, r9; // r10;
-double eq_dist = 3.55e-10;
-double boxSize = 1.75*eq_dist;
+double eq_dist = 4e-10;
+double boxSize = 2.5*eq_dist;
 double LH = eq_dist + 2*std::sqrt(0.75 * std::pow(eq_dist, 2));
 double LW = 3.5*eq_dist;
-double temperature = 150;
+double temperature = 0;
 int Npart = 9;
 double oldPositions[9][2] = {
 	{0.0, 0.0}, {0.0, 0.0}, {0.0, 0.0}, {0.0, 0.0}, {0.0, 0.0},
@@ -140,7 +140,7 @@ int main()
 	r2 = { -0.25* eq_dist, y_from_center };
 	r3 = { 0.75* eq_dist, y_from_center };
 	r4 = { -0.75* eq_dist, 0.0 };
-	r5 = { 0.025* eq_dist, 0.0 };
+	r5 = { 0.25* eq_dist, 0.0 };
 	r6 = { 1.25* eq_dist, 0.0 };
 	r7 = { -1.25* eq_dist, -y_from_center };
 	r8 = { -0.25* eq_dist, -y_from_center };
