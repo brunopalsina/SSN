@@ -1,5 +1,4 @@
-// md_opengl_2.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// REAL-TMIE MOLECULAR DYNAMICS SIMULATION WITH 2D VISUALISATION
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
@@ -9,15 +8,17 @@
 #include <random>
 
 // settings
-const unsigned int SCR_WIDTH = 500;
-const unsigned int SCR_HEIGHT = 500;
-const double PI = 3.14159265358979323846;
+const unsigned int SCR_WIDTH = 300;
+const unsigned int SCR_HEIGHT = 300;
+
 // Constants for Lennard-Jones potential in SI units
+const double PI = 3.14159265358979323846;
 const double epsilon = 0.00286 * 1.60218e-19; // Depth of the potential well in Joules
 const double sigma = 0.35e-9;                // Distance at which the potential is zero in meters
-const double dt = 1e-17;                      // Time step for integration in seconds
+const double dt = 1e-16;                      // Time step for integration in seconds
 const double cMass = 1.9944733e-26;
 const double Kb = 1.380649e-23;
+
 // Global variables
 std::array<double, 2> r1, r2, r3, r4, r5, r6, r7, r8, r9; // r10;
 double eq_dist = 3.55e-10;
@@ -263,13 +264,13 @@ int main()
 	glBindVertexArray(0);
 
 	//MAIN LOOP
-	//Loop of lines to call each iteration (still don't know the frequency) while the window is open
+	//Loop of lines to call each iteration (not yet aware of the loop's frequency) while the window is open
 	int timefs = 0;
 	while (!glfwWindowShouldClose(window))
 	{
 		processInput(window);
 		
-		//Rendering commands here...
+		//Rendering commands
 		glClearColor(0.8f, 0.8f, 0.8f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 
@@ -365,17 +366,18 @@ void processInput(GLFWwindow* window)
 		glfwSetWindowShouldClose(window, true);
 }
 
+//Dodecagon vertices generator
 std::array<double, 39> dodecagonVertices(double centerX, double centerY) 
 {
 	std::array<double, 39> vertices;
 	double radius = (3.5e-10 / 2) / boxSize;
 
-	// Store the center coordinates
+	// Dodecagon center coordinates
 	vertices[0] = centerX / boxSize;
 	vertices[1] = centerY / boxSize;
 	vertices[2] = 0.0;
 
-	// Calculate and store the coordinates of the 12 vertices
+	// Coordinates of the 12 vertices
 	for (int i = 0; i < 12; ++i) {
 		double angle = 2 * PI * i / 12; // Calculate the angle for each vertex
 		double x = centerX / boxSize + radius * std::cos(angle); // Calculate x-coordinate
@@ -389,7 +391,7 @@ std::array<double, 39> dodecagonVertices(double centerX, double centerY)
 }
 
 // MOLECULAR DYNAMICS FUNCTIONS
-// Function to calculate Lennard-Jones force
+// Lennard-Jones force
 std::array<double, 2> calculateForce(const std::array<double, 2>& r) {
 	std::array<double, 2> force = { 0.0, 0.0 };
 	
@@ -424,7 +426,7 @@ void applyPBC(std::array<double, 2>& r) {
 	r[0] -= LW * std::floor(r[0] / LW + 0.5);  // Adjust for centered origin
 	r[1] -= LH * std::floor(r[1] / LH + 0.5);  // Adjust for centered origin
 }
-// Function to integrate using the Verlet algorithm
+// Verlet integration
 void integrate(std::array<double, 2>& r1, std::array<double, 2>& r2, std::array<double, 2>& r3, std::array<double, 2>& r4,
 	std::array<double, 2>& r5, std::array<double, 2>& r6, std::array<double, 2>& r7, std::array<double, 2>& r8, std::array<double, 2>& r9, //std::array<double, 2>& r10,
 	std::array<double, 2>& r1_old, std::array<double, 2>& r2_old, std::array<double, 2>& r3_old, std::array<double, 2>& r4_old,
@@ -520,6 +522,6 @@ void vInitial() {
 		v0[i][1] = ( v0[i][1] - vCenterMass[1]) * scaleFactor;
 		oldPositions[i][0] += (-dt * v0[i][0]);
 		oldPositions[i][1] += (-dt * v0[i][1]);
-		std::cout << "(" << oldPositions[i][0] << "," << oldPositions[i][1] << ")" << std::endl;
+		//std::cout << "(" << oldPositions[i][0] << "," << oldPositions[i][1] << ")" << std::endl;
 	};
 };
