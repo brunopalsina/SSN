@@ -21,11 +21,11 @@ const double Kb = 1.380649e-23;
 
 // Global variables
 std::array<double, 2> r1, r2, r3, r4, r5, r6, r7, r8, r9; // r10;
-double eq_dist = 4e-10;
+double eq_dist = 3.6e-10;
 double boxSize = 2.5*eq_dist;
 double LH = eq_dist + 2*std::sqrt(0.75 * std::pow(eq_dist, 2));
-double LW = 3.5*eq_dist;
-double temperature = 0;
+double LW = 3*eq_dist;
+double temperature = 297;
 int Npart = 9;
 double oldPositions[9][2] = {
 	{0.0, 0.0}, {0.0, 0.0}, {0.0, 0.0}, {0.0, 0.0}, {0.0, 0.0},
